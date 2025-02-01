@@ -6,32 +6,33 @@
   <title>Coffe-roaster</title>
 
   <!-- STYLES -->
+  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/styles.css">
 
 
 </head>
 <body>
 <!-- SITE-HEADER -->
-<header class="site-header">
+<header class="header">
   <div class="container">
-    <div class="site-header-content">
-      <a class="site-header-logo site-logo">
-        <img class="site-header-logo-img" src="/img/coffe-roaster-logo.svg" alt="coffe-roaster-logo" width="235" height="24">
-      </a>
-      <nav class="site-header-sitenav">
-          <ul class="sitenav-list">
-            <li class="sitenav-item header-sitenav-item">
-              <a class="sitenav-link " href="#" >HOME</a>
-            </li>
-            <li class="sitenav-item header-sitenav-item">
-              <a class="sitenav-link" href="#" >ABOUT US</a>
-            </li>
-            <li class="sitenav-item header-sitenav-item">
-              <a class="sitenav-link" href="#" >CREATE YOUR PLAN</a>
-            </li>
-          </ul>
-      </nav>
-    </div>
+      <div class="header-content">
+        <a class="site-logo" href="#">
+          <img class="site-logo-img" src="/img/coffe-roaster-logo.svg" alt="coffe-roaster-logo" width="235" height="24">
+        </a>
+        <nav class="header-sitenav">
+            <ul class="sitenav-list">
+              <li class="sitenav-item header-sitenav-item">
+                <a class="sitenav-link " href="#" >HOME</a>
+              </li>
+              <li class="sitenav-item header-sitenav-item">
+                <a class="sitenav-link" href="#" >ABOUT US</a>
+              </li>
+              <li class="sitenav-item header-sitenav-item">
+                <a class="sitenav-link" href="#" >CREATE YOUR PLAN</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
   </div>
 </header>
 
@@ -42,12 +43,10 @@
   <section class="hero">
     <div class="hero-container  container">
       <div class="hero-content">
-        <div class="hero-content-items">
           <h1 class="hero-heading"> Good coffee is made simply. </h1>
           <p3 class="hero-text">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p3>
-          <button class="hero-button" type="submit">Create your plan</button>
+          <button class="hero-button button" type="submit">Create your plan</button>
         </div>
-      </div>
       <div class="hero-img-side">
         <img class="hero-img" src="/img/coffe-roaster-label.svg" alt="cups of coffe and sweet"  width="160" height="160" >
       </div>
@@ -56,43 +55,39 @@
 
   <!-- COLLECTION -->
   <section class="collection">
-    <div class="colection-container  container">
+    <div class="container">
       <div class="collection-content-wrapper">
         <h2 class="collection-heading">our collection</h2>
         <ul class="collection-list">
-          <li class="collection-list-item">
-            <div class="collection-list-img-red">
-              <img class="collection-img-top" src="/img/leaves-top.svg" alt="Green leaves on the top side">
-            </div>
+          <li class="collection-list-item top-leaves-img">
+          <div class="collection-img-wrapper">
+            <img class="collection-img" src="/img/package-red.png" alt="Red package of coffee" srcset="/img/package-red.png 1x, /img/package-red@2x.png 2x" width="450" height="375">
+          </div>
             <div class="collection-list-heading-wrapper">
               <h2 class="collection-list-heading">Danche</h2>
               <p class="collection-list-text">Ethiopian hand-harvested blend densely packed with vibrant fruit notes.</p>
           </div>
           </li>
-          <li class="collection-list-item">
+          <li class="collection-list-item middle-leves-img">
             <div class="collection-list-heading-wrapper">
               <h2 class="collection-list-heading">Gran Espresso</h2>
               <p class="collection-list-text">Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
             </div>
-            <div class="collection-list-img-green">
-              <img class="collection-img-right" src="/img/leaves-right.svg" alt="Green leaves on the right side" >
-            </div>
+            <img class="collection-img" src="/img/package-green.png" alt="Green package of coffee" srcset="/img/package-green.png 1x, /img/package-green@2x.png 2x" width="450" height="375">
           </li>
           <li class="collection-list-item">
-            <div class="collection-list-img-brown">
-              <img class="collection-img-bottom" src="/img/leaves-bottom.svg" alt="Green leaves on the bottom side" >
-            </div>
+            <img class="collection-img" src="/img/package-brown.png" alt="Brown package of coffee" srcset="/img/package-brown.png 1x, /img/package-brown@2x.png 2x" width="450" height="375">
             <div class="collection-list-heading-wrapper">
               <h2 class="collection-list-heading">Piccollo</h2>
               <p class="collection-list-text">Mild and smooth blend featuring notes of toasted almond and dried cherry.</p>
             </div>
           </li>
-          <li class="collection-list-item">
+          <li class="collection-list-item bottom-leaves-img">
             <div class="collection-list-heading-wrapper">
               <h2 class="collection-list-heading">Planalto</h2>
               <p class="collection-list-text">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.</p>
             </div>
-            <img class="collection-list-img" src="/img/package-yellow.jpg" alt=" Coffee of yellow package"  width="450" height="375" srcset="/img/package-yellow.jpg 1x, /img/package-yellow@2x.jpg 2x">
+            <img class="collection-img" src="/img/package-yellow.png" alt="Yellow package of coffee" srcset="/img/package-yellow.png 1x, /img/package-yellow@2x.png 2x" width="450" height="375">
           </li>
         </ul>
       </div>
@@ -102,34 +97,28 @@
   <!-- ADVENTAGES -->
   <section class="adventages">
     <div class="adventages-container container">
-      <div class="adventages-section-content">
-        <div class="adventages-heading-side-wrapper">
-          <div class="adventages-heading-side">
-            <h2 class="adventages-heading">Why choose us?</h2>
-            <div class="adventages-heading-text-wrapper">
-              <p class="adventages-heading-text">A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.</p>
-            </div>
+      <div class="adventages-heading-side">
+        <h2 class="adventages-heading">Why choose us?</h2>
+        <p class="adventages-text">A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.</p>
+      </div>
+      <div class="adventages-grid">
+        <article class="adventages-grid-item article-card">
+          <div class="adventages-img-checker-man">
+            <img class="adventages-coffee-label" src="/img/adventages-section-coffee-label.png" alt="" srcset="/img/adventages-section-coffee-label.png 1x, /img/adventages-section-coffee-label@2x.png 2x" width="140" height="144">
           </div>
-        </div>
-        <div class="adventages-grid">
-          <article class="adventages-grid-item article-card">
-            <div class="adventages-img-checker-man">
-              <img class="adventages-coffee-label" src="/img/adventages-section-coffee-label.png" alt="" srcset="/img/adventages-section-coffee-label.png 1x, /img/adventages-section-coffee-label@2x.png 2x" width="140" height="144">
-          </div>
-            <h3 class="adventages-card-title">Best quality</h3>
+          <h3 class="adventages-card-title">Best quality</h3>
           <p class="adventages-card-text">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
-          </article>
-          <article class="adventages-grid-item article-card">
+        </article>
+        <article class="adventages-grid-item article-card">
           <div class="adventages-img-hot-coffee"></div>
           <h3 class="adventages-card-title">Exclusive benefits</h3>
           <p class="adventages-card-text">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
-          </article>
-          <article class="adventages-grid-item article-card">
+        </article>
+        <article class="adventages-grid-item article-card">
           <div class="adventages-img-drinking-coffee"></div>
           <h3 class="adventages-card-title">Free shipping</h3>
           <p class="adventages-card-text">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
-          </article>
-        </div>
+        </article>
       </div>
     </div>
   </section>
@@ -169,7 +158,7 @@
           </article>
         </div>
         <div class="manual-grid-button-wrapper">
-          <button class="manual-grid-button" type="submit">Create your plan</button>
+          <button class="manual-grid-button button" type="submit">Create your plan</button>
         </div>
       </div>
     </div>
@@ -179,8 +168,8 @@
   <footer class="site-footer">
     <div class="container">
       <div class="site-footer-content">
-        <a class="site-footer-logo site-logo" href="#">
-          <img class="site-footer-logo-img" src="/img/coffe-roaster-logo.svg" alt="">
+        <a class="site-logo  site-footer-logo" href="#">
+          <img class="site-logo-img" src="/img/coffe-roaster-logo.svg" alt="">
         </a>
         <nav class="site-footer-sitenav">
           <ul class="sitenav-list">
@@ -198,18 +187,18 @@
         <div class="site-footer-socials">
           <ul class="footer-socials-list">
             <li class="footer-socials-list-item">
-              <a class="footer-socials-list-link" href="#" >
-                <img class="footer-socials-list-icon" src="/img/facebook-icon.svg" alt="Facebook" width="30" height="30">
+              <a class="footer-socials-list-link" href="#">
+                <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.344 0H1.656C.741 0 0 .741 0 1.656v26.689C0 29.259.741 30 1.656 30h14.369V18.383h-3.91v-4.528h3.91v-3.339c0-3.875 2.366-5.985 5.824-5.985 1.656 0 3.078.124 3.494.179v4.05l-2.398.001c-1.88 0-2.244.894-2.244 2.204v2.891h4.484l-.584 4.528h-3.9V30h7.645C29.26 30 30 29.259 30 28.344V1.656C30 .741 29.259 0 28.344 0Z" fill="currentColor"/></svg>
               </a>
             </li>
             <li class="footer-socials-list-item">
               <a class="footer-socials-list-link" href="#" >
-                <img class="footer-socials-list-icon footer-socials-icon-twitter" src="/img/twitter-icon.svg" alt="Twitter" width="30" height="25">
+                <svg width="30" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30 2.96c-1.104.502-2.29.84-3.535.993A6.296 6.296 0 0 0 29.171.461a12.145 12.145 0 0 1-3.909 1.532A6.075 6.075 0 0 0 20.77 0c-3.974 0-6.894 3.802-5.996 7.748C9.66 7.486 5.125 4.973 2.089 1.155.476 3.99 1.252 7.702 3.993 9.58a6.014 6.014 0 0 1-2.787-.79c-.067 2.925 1.977 5.66 4.936 6.269a6.02 6.02 0 0 1-2.78.107c.783 2.508 3.056 4.332 5.75 4.383A12.156 12.156 0 0 1 0 22.165 17.112 17.112 0 0 0 9.435 25c11.428 0 17.884-9.897 17.494-18.773A12.713 12.713 0 0 0 30 2.96Z" fill="currentColor"/></svg>
               </a>
             </li>
             <li class="footer-socials-list-item">
               <a class="footer-socials-list-link" href="#" >
-                <img class="footer-socials-list-icon" src="/img/instagram-icon.svg" alt="Instagram" width="30" height="30">
+                <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0c-4.074 0-4.584.018-6.184.09C3.37.34.341 3.362.091 8.815.018 10.416 0 10.926 0 15s.018 4.585.09 6.185c.25 5.448 3.272 8.475 8.725 8.725 1.601.073 2.111.09 6.185.09s4.585-.017 6.185-.09c5.443-.25 8.478-3.273 8.724-8.725.074-1.6.091-2.111.091-6.185s-.017-4.584-.09-6.184C29.665 3.374 26.639.341 21.186.091 19.585.018 19.074 0 15 0Zm0 2.704c4.005 0 4.48.015 6.063.087 4.065.185 5.963 2.114 6.148 6.15.073 1.58.087 2.055.087 6.06 0 4.007-.015 4.48-.087 6.062-.186 4.03-2.08 5.963-6.148 6.148-1.583.073-2.055.088-6.063.088-4.005 0-4.48-.015-6.061-.088-4.075-.186-5.964-2.123-6.149-6.15-.072-1.58-.087-2.055-.087-6.06 0-4.006.016-4.48.087-6.062.186-4.034 2.08-5.964 6.149-6.149 1.582-.071 2.056-.086 6.061-.086ZM7.297 15a7.703 7.703 0 1 1 15.406 0 7.703 7.703 0 0 1-15.406 0ZM15 20a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm6.206-13.007a1.8 1.8 0 1 1 3.601.002 1.8 1.8 0 0 1-3.6-.002Z" fill="currentColor"/></svg>
               </a>
             </li>
           </ul>
